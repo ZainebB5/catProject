@@ -11,6 +11,6 @@ public class Panthera extends Animal{
 
     @Override
     public String toString() {
-        return "Panthera";
+        return "I'am a Panthera";
     }
 }

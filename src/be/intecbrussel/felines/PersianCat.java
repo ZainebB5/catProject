@@ -4,6 +4,6 @@ public class PersianCat extends Felis{
 
     @Override
     public String toString() {
-        return "PersianCat";
+        return "I'am a PersianCat";
     }
 }

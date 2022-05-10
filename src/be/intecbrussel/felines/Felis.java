@@ -36,7 +36,7 @@ public class Felis extends Animal{
     }
 
     public void setShelterNo(int shelterNo) {
-        if( Math.abs(shelterNo) < 1000){
+        if( Math.abs(shelterNo) <= 999){
             this.shelterNo = shelterNo;
         } else {
             System.out.println("wrong value ! ShelterNo must be between 0 and 999 .\n Please change value in setShelterNo()");
@@ -49,7 +49,7 @@ public class Felis extends Animal{
     }
 
     public void setBadgeNo(int badgeNo) {
-        if( Math.abs(shelterNo) < 1000){
+        if( Math.abs(shelterNo) <= 999){
             this.badgeNo = badgeNo;
         } else {
             System.out.println("wrong value ! BadgeNo must be between 0 and 999 .\n Please change value in setBadgeNo()");
@@ -57,7 +57,6 @@ public class Felis extends Animal{
     }
 
     public void miauw(){
-        System.out.println("miauwww ");
     }
     public void miauw(int time){
     }
@@ -69,7 +68,7 @@ public class Felis extends Animal{
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null) return false;
         Felis felis = (Felis) o;
         return shelterNo == felis.shelterNo && badgeNo == felis.badgeNo;
     }
@@ -79,6 +78,9 @@ public class Felis extends Animal{
         return Objects.hash(shelterNo, badgeNo);
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Hello my name is" + name + ", my shelterNo is : " + shelterNo +
+                " and my badgeNo : " + badgeNo;
+    }
 }

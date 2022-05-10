@@ -14,6 +14,8 @@ public class FelineApp {
         Acinonyx acin1 = new Acinonyx();
 
 
+
+
         Felis[] felisListCat = new Felis[]{pers, tvc, siam, nfc, amc, persian, turkvc };
 
         System.out.println("number of animals " + Animal.getAnimalCount());
@@ -22,16 +24,23 @@ public class FelineApp {
         }
         System.out.println("-".repeat(30));
         pers.setName("Titi");
-        pers.setShelterNo(1000);
-        pers.setBadgeNo(32);
+        pers.setShelterNo(333);
+        pers.setBadgeNo(543);
         System.out.println("Hello my name is " + pers.getName() + " I'm a " + pers.toString() + ", my shelternum is : " + pers.getShelterNo() + " and my badgenum is : " + pers.getBadgeNo());
 
         System.out.println("-".repeat(30));
         tvc.setName("Toto");
-        tvc.setShelterNo(200);
-        tvc.setBadgeNo(32);
+        tvc.setShelterNo(333);
+        tvc.setBadgeNo(543);
         System.out.println("Hello my name is " + tvc.getName() + " I'm a " + tvc.toString() + ", my shelternum is : " + tvc.getShelterNo() + " and my badgenum is : " + tvc.getBadgeNo());
 
+        System.out.println("equals : " + pers.equals(tvc));
+
+        System.out.println("-".repeat(30));
+        siam.setName("Tata");
+        siam.setShelterNo(1000);
+        siam.setBadgeNo(32);
+        System.out.println("Hello my name is " + siam.getName() + " I'm a " + siam.toString() + ", my shelternum is : " + siam.getShelterNo() + " and my badgenum is : " + siam.getBadgeNo());
 
         /*AndreanMountainCat amc = new AndreanMountainCat("Maya",10);
         System.out.println(amc.getName() + " - " + amc.getAge());

@@ -10,7 +10,7 @@ public class AndreanMountainCat extends Felis{
 
     @Override
     public String toString() {
-        return "AndreanMountainCat";
+        return "I'am a AndreanMountainCat";
     }
 
     @Override

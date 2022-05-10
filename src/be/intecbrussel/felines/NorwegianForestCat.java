@@ -4,6 +4,7 @@ public class NorwegianForestCat extends  Felis{
 
     @Override
     public String toString() {
-        return "NorwegianForestCat";
+        return "I'am a NorwegianForestCat";
+        //return super.getName() + ", i'am a NorwegianForestCat" + super.getShelterNo() + super.getBadgeNo() ;
     }
 }

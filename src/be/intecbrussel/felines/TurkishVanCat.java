@@ -13,6 +13,6 @@ public class TurkishVanCat extends Felis{
 
     @Override
     public String toString() {
-        return "TurkishVanCat";
+        return "I'am a TurkishVanCat";
     }
 }
