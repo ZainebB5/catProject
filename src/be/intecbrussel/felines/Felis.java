@@ -77,10 +77,4 @@ public class Felis extends Animal{
     public int hashCode() {
         return Objects.hash(shelterNo, badgeNo);
     }
-
-    @Override
-    public String toString() {
-        return "Hello my name is" + name + ", my shelterNo is : " + shelterNo +
-                " and my badgeNo : " + badgeNo;
-    }
 }
